@@ -1,0 +1,58 @@
+body {}
+
+.xuannghiepftskill {}
+
+.xuannghiepftskill.outline li {
+    display: inline-block;
+    font-size: 17px;
+    min-width: 3em;
+    margin-top: 0.5em;
+    background-color: #e0e0e0;
+    color: #636363;
+    border: 3px solid rgba(105, 105, 105, 0.644);
+    border-radius: 20px;
+    text-align: center
+}
+
+.xuannghiepftskill li {
+    width: 350px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px 0px #33FFFF
+}
+
+.xuannghieptransform:hover {
+    transform: scale(0.95);
+    box-shadow: 0 0 7px 3px #00FFFF
+}
+
+html {
+    position: relative
+}
+
+html:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background-image: url('https://cdn.glitch.me/2a4d780f-b9e8-4739-9886-831c1d5fcdb0%2F26a4f5a3-8dcd-4eed-afcb-72f99c6aa653.image.png?v=1639136324336'), url('https://cdn.glitch.me/2a4d780f-b9e8-4739-9886-831c1d5fcdb0%2F7f115bbb-5f47-4e19-98b7-dbf4a359a00c.image.png?v=1639136365819'), url('https://cdn.glitch.me/2a4d780f-b9e8-4739-9886-831c1d5fcdb0%2F5a01e66e-33a3-4aad-96f5-87d8336d3fa4.image.png?v=1639136393414');
+    animation: snow 10s linear infinite
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px
+    }
+    50% {
+        background-position: 500px 500px, 100px 200px, -100px 150px
+    }
+    100% {
+        background-position: 500px 1000px, 200px 400px, -100px 300px
+    }
+}
